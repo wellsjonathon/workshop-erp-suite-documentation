@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  5 FEB 2019 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  5 FEB 2019 17:12
 entering extended mode
 **"./Documentation and Specifications.tex"
 ("Documentation and Specifications.tex"
@@ -226,80 +226,80 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 72.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 86.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 75.
+<UR.png, id=1, 794.97pt x 316.3017pt>
+File: UR.png Graphic file (type png)
+<use UR.png>
+Package pdftex.def Info: UR.png  used on input line 113.
+(pdftex.def)             Requested size: 338.94543pt x 134.86322pt.
+[1
+
+{C:/Users/konst/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./UR.png>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 136.
+ ("Documentation and Specifications.toc"
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 2.
+
 ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 86.
-
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
 ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 86.
-
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
  ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd
 "
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 86.
-
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
 
 ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 86.
-
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
  ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd
 "
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-<UR.png, id=1, 794.97pt x 316.3017pt>
-File: UR.png Graphic file (type png)
-<use UR.png>
-Package pdftex.def Info: UR.png  used on input line 104.
-(pdftex.def)             Requested size: 338.94543pt x 134.86322pt.
- [1
-
-{C:/Users/konst/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./UR.png>]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 127.
- ("Documentation and Specifications.toc"
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
-)
+))
 \tf@toc=\write3
 \openout3 = `"Documentation and Specifications.toc"'.
 
- [1]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 136.
+ [1] ("Documentation and Specifications.lof")
+\tf@lof=\write4
+\openout4 = `"Documentation and Specifications.lof"'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--142
+ [2]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 149.
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[2] ("Documentation and Specifications.aux") )
+[3] [4] ("Documentation and Specifications.aux") )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 141 ({)
+### simple group (level 1) entered at line 154 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2351 strings out of 492973
- 34435 string characters out of 3126692
- 100091 words of memory out of 3000000
- 6177 multiletter control sequences out of 15000+200000
+ 2355 strings out of 492973
+ 34763 string characters out of 3126692
+ 99091 words of memory out of 3000000
+ 6178 multiletter control sequences out of 15000+200000
  30924 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,4n,32p,926b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,5n,32p,926b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplb8a.pfb><C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/palatino/uplr8a.pfb>
-Output written on "Documentation and Specifications.pdf" (3 pages, 205725 bytes
+Output written on "Documentation and Specifications.pdf" (5 pages, 209908 bytes
 ).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -39,8 +39,8 @@
 \usepackage{graphicx}
 \usepackage{mathpazo} % Palatino font
 \usepackage[legalpaper,margin=0.9in] {geometry}
-\setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
 
 \begin{document}
 
@@ -57,9 +57,12 @@
 	%	Headings
 	%------------------------------------------------
 	
-	\textsc{\LARGE University of Regina}\\[1.5cm] % Main heading such as the name of your university/college
+	\textsc{\Huge University of Regina}\\[1.5cm] % Main heading such as the name of your university/college
+
+	\textsc{\Large ENSE 477: Software Capstone Project}\\[0.5cm]
 	
 	\textsc{\Large Software Systems Engineering}\\[0.5cm] % Major heading such as course name
+	
 	
 	
 	
@@ -77,19 +80,25 @@
 	%	Author(s)
 	%------------------------------------------------
 	
-	\begin{minipage}{0.4\textwidth}
+	\begin{minipage}[t]{0.4\textwidth}
 		\begin{flushleft}
 			\large
+			\textsc{Authors}\\
 			Jonathan Wells\\
-			\textsc{200328640} % Your name
-		\end{flushleft}
-	\end{minipage}
-	~
-	\begin{minipage}{0.4\textwidth}
-		\begin{flushright}
+			\textsc{200328640}\\ % Your name
 			\large
 			Konstantin Kharitonov\\
 			\textsc{200354502} % Supervisor's name
+		\end{flushleft}
+		
+	\end{minipage}
+	~
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textsc{Supervisor}\\ % Supervisor's name
+			Karim Naqvi\\
+			M. A.Sc., P.Eng.\\
 		\end{flushright}
 	\end{minipage}
 	
@@ -100,7 +109,7 @@
 	%	Logo
 	%------------------------------------------------
 	
-	\vfill\vfill
+	\vfill\vfill\vfill\vfill
 	\includegraphics[width=0.7\textwidth]{UR.png}\\[2cm] % Include a department/university logo - this will require the graphicx package
 	 
 
@@ -127,10 +136,14 @@
 \tableofcontents
 %-------------------------------------------------------------------------------------
 
+%-------------------------------------------------------------------------------------
+%Table of Figures % 
 \newpage
+\listoffigures
 
 %-------------------------------------------------------------------------------------
 %Introduction%
+\newpage
 \section{Introduction}
 The Workshop Enterprise Resource Planning Suite, or ERP for short, is an administrative task management web application primarily designed for the Engineering Workshop at University of Regina main campus. It is to be the main application to be used for managing incoming and outgoing workorders, which are student and faculty submitted forms requesting the service of the shop. The service provides workorder capacity planning, allowing for the user to actively manage the status of each project, time tracking features for large scale and small scale work, as well as the ability to track the inventory of the workshop, including but not limited to, materials, tools and equipment. 
 \subsection{Purpose}
@@ -142,7 +155,30 @@ ERP is designed as a Web API, such that it is run in browser and is able to be a
 
 The ERP Suite currently is planned to be exclusive to the engineering workshop based on its design as of the completion of this capstone project, as future work on this project will require a redesign to be re-purposed for future clients. The ideal future client for this program is for machine and workshop owners with a staff less than 50.  
 
+\newpage
+
 \section{Overall Description}
+\subsection{Product Perspective}
+The Workshop ERP suite is broken up into its 3 main functionalities: 
+
+	\begin{enumerate}
+	\item Workorders
+	\item Time Tracking and Project Management 
+	\item Inventory
+	\end{enumerate}
+
+Each feature can be accessed from the navigation side bar, which is present on all pages of the web application. 
+
+\subsubsection*{Workorders:}
+On the workorder page, the client is able to access all workorders currently present in the system, whether they be first or historical submissions. Options include but not limited to, viewing user submissions, filter through all workorders, and tag them based on progress status and importance. 
+
+\subsubsection*{Time Tracking and Project Management:}
+This page includes all of the time tracking features such as submitting current activities/projects into the system's calendar and creating a plan for workorders to be completed in the future. The time tracking page is also used for an accurate description of each semester, highlighting which project was worked each day. Functionality from this feature is also shown on the right navigation bar, allowing for quick access to daily tasks and which project deadlines are approaching the current date.
+
+\subsubsection*{Inventory:}
+The inventory page is where the client is able to access and filter through the materials that are currently or previous were in stock in the workshop. Each material is able to be found inside the inventory database, as well as describing each based on filters such as type, amount, and length. Vendor information from where the material was purchased from and price per pound is also accessed from here. 
+
+
 \section{System Features}
 \section{External Interface Requirements}
 \section{Non-Functional Requirements}
