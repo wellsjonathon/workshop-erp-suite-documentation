@@ -1,0 +1,91 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  25 JAN 2019 09:02
+entering extended mode
+**./SRS-template.tex
+(SRS-template.tex
+LaTeX2e <2018-04-01> patch level 5
+("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\changebar\changeba
+r.sty"
+Package: changebar 2018/03/09 v3.6c Indicate changes with marginal bars
+\cb@nextpoint=\count88
+\cb@topleft=\count89
+\cb@topright=\count90
+\cb@botleft=\count91
+\cb@botright=\count92
+\cb@cnta=\count93
+\cb@cntb=\count94
+\cb@dima=\dimen103
+\cb@curbarwd=\dimen104
+\cb@page=\count95
+\cb@pagecount=\count96
+\cb@odd@left=\dimen105
+\cb@odd@right=\dimen106
+\cb@even@left=\dimen107
+\cb@even@right=\dimen108
+\cb@writexy=\write3
+\cb@readxy=\read1
+\openout3 = `SRS-template.cb2'.
+
+\changebarwidth=\skip43
+\deletebarwidth=\skip44
+\changebarsep=\skip45
+\c@changebargrey=\count97
+\cb@write=\write4
+\cb@read=\read2
+\openout4 = `SRS-template.cb'.
+
+)
+("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\acronym\acronym.st
+y"
+Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+
+("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty
+"
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+
+! LaTeX Error: File `xstring.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.47 \newif
+           \ifAC@footnote
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 419 strings out of 492973
+ 5466 string characters out of 3126692
+ 65942 words of memory out of 3000000
+ 4367 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,0n,25p,156b,36s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
+t of 3000000
+ 4796 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,0n,25p,276b,36s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
