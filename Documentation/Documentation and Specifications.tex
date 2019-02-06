@@ -39,8 +39,17 @@
 \usepackage{graphicx}
 \usepackage{mathpazo} % Palatino font
 \usepackage[legalpaper,margin=0.9in] {geometry}
+\usepackage{fancyhdr}
+
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textsc{University of Regina}}
+\rhead{\textsc{Software Systems Engineering}}
+\cfoot{\thepage}
 
 \begin{document}
 
@@ -170,7 +179,14 @@ The Workshop ERP suite is broken up into its 3 main functionalities:
 Each feature can be accessed from the navigation side bar, which is present on all pages of the web application. 
 
 \subsubsection*{Workorders:}
-On the workorder page, the client is able to access all workorders currently present in the system, whether they be first or historical submissions. Options include but not limited to, viewing user submissions, filter through all workorders, and tag them based on progress status and importance. 
+On the workorder page, the client is able to access all workorders currently present in the system, whether they be first or historical submissions. Options include but not limited to, viewing user submissions, filter through all workorders, and tag them based on progress status and importance. The following figure showcases the different stages of a workorder throughout the submission process.
+ 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5in]{workorder-status.png}\\
+	\caption{Different Stages of a Workorder}
+	\label{fig:tobias}
+\end{figure}
 
 \subsubsection*{Time Tracking and Project Management:}
 This page includes all of the time tracking features such as submitting current activities/projects into the system's calendar and creating a plan for workorders to be completed in the future. The time tracking page is also used for an accurate description of each semester, highlighting which project was worked each day. Functionality from this feature is also shown on the right navigation bar, allowing for quick access to daily tasks and which project deadlines are approaching the current date.
@@ -178,8 +194,40 @@ This page includes all of the time tracking features such as submitting current 
 \subsubsection*{Inventory:}
 The inventory page is where the client is able to access and filter through the materials that are currently or previous were in stock in the workshop. Each material is able to be found inside the inventory database, as well as describing each based on filters such as type, amount, and length. Vendor information from where the material was purchased from and price per pound is also accessed from here. 
 
+\subsection{Constraints}
+As currently designed, the program is intended to only be used on campus. It is specific to the engineering workshop on campus and must go through a redesign before it can be distributed to a different client. As well, a steady internet connection is required to access the application as well as connect to the server hosting the application and its associated databases. The service is not optimised to mobile and as such, the user is heavily encouraged to the desktop version, though it is not a complete necessity.  
+\newline
+{\setlength{\parindent}{0cm}
 
+Some non-technical restraints include the application being unilingual to English, must be follow university guidelines of conduct, and requires a basic understanding of computing.  
+
+\subsection{Operating Enviroment}
+The project is split into two main categories for development; the frontend and the backend. 
+\newline
+{\setlength{\parindent}{0cm}
+
+The frontend implements the Vue.js framework based upon javascript. It is an online front end framework that allows developers to build user interfaces and single page web applications. For development, the frontend ran on a development localhost server which allowed for dynamic programming and error-checking. SCSS is also used to add functionality to CSS pages.  
+\newline
+{\setlength{\parindent}{0cm}
+
+The backend is ASP.NET, Microsoft's own open-source server side web application framework, using the C\# language. The project is also optimized to use Entity Framework.Databases are stored and accessed through a SQL server which is connected to the backend.
+\newline
+{\setlength{\parindent}{0cm}
+
+Visual Studio Code is used as the primary code editor for all frontend development. Visual Studio is used for server side and database programming. Google Chrome the browser interface that is currently used during implementation. 
+
+\subsection{Dependencies}
+For the ERP suite function to provide the most value to the client, all data submitted inside application must be accurate, as the system will only perform based on the data that is given to the system. Workorders are assumed to be submitted in the proper predefined format such that crucial data is not lost throughout the project's lifetime. If a redesign of the workorder format is needed, documentation of this change is highly recommended.
+\newline
+{\setlength{\parindent}{0cm}
+ 
+As well, all materials submitted into the inventory page must be properly accounted for in shop as well as on site. The program will display the information that it will receive, and changes to any inventory should be recorded as is necessary. The system relies on the user to file inventory data frequently to be considered up to date. 
+\newline
+{\setlength{\parindent}{0cm}
+
+Since this application is currently being  developed in Sasktachewan, the system will use Staskatchewan standard time and will not account for any daylight savings that may occur if the program is used elsewhere in the work. 
 \section{System Features}
+
 \section{External Interface Requirements}
 \section{Non-Functional Requirements}
 \section{References}
