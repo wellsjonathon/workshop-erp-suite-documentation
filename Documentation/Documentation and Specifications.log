@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  6 FEB 2019 02:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  8 FEB 2019 12:16
 entering extended mode
 **"./Documentation and Specifications.tex"
 ("Documentation and Specifications.tex"
@@ -110,40 +110,58 @@ s
 \f@nch@O@erf=\skip49
 \f@nch@O@olf=\skip50
 \f@nch@O@orf=\skip51
-) ("Documentation and Specifications.aux")
+)
+("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count91
+\float@exts=\toks18
+\float@box=\box26
+\@float@everytoks=\toks19
+\@floatcapt=\box27
+)
+("Documentation and Specifications.aux"
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+)
 \openout1 = `"Documentation and Specifications.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 54.
-
-("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 55.
+ ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count91
+\scratchcounter=\count92
 \scratchdimen=\dimen113
-\scratchbox=\box26
-\nofMPsegments=\count92
-\nofMParguments=\count93
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count94
+\scratchbox=\box28
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count95
 \MPscratchDim=\dimen114
-\MPnumerator=\count95
-\makeMPintoPDFobject=\count96
-\everyMPtoPDFconversion=\toks19
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks21
 )
 ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -240,17 +258,17 @@ G,.JBIG2,.JB2,.eps]
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 84.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 85.
 <UR.png, id=1, 794.97pt x 316.3017pt>
 File: UR.png Graphic file (type png)
 <use UR.png>
-Package pdftex.def Info: UR.png  used on input line 122.
+Package pdftex.def Info: UR.png  used on input line 123.
 (pdftex.def)             Requested size: 338.94543pt x 134.86322pt.
 [1
 
 {C:/Users/konst/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./UR.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 145.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 146.
  ("Documentation and Specifications.toc"
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
@@ -294,81 +312,103 @@ This may cause the page layout to be inconsistent, however.
 
  [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 158.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 159.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--164
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
  []
 
 [3]
-<workorder-status.png, id=19, 794.97pt x 614.295pt>
+<workorder-status.png, id=19, 299.40428pt x 388.88142pt>
 File: workorder-status.png Graphic file (type png)
 <use workorder-status.png>
-Package pdftex.def Info: workorder-status.png  used on input line 186.
-(pdftex.def)             Requested size: 361.34999pt x 279.23282pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
-
- []
-
-[4 <./workorder-status.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+Package pdftex.def Info: workorder-status.png  used on input line 187.
+(pdftex.def)             Requested size: 361.34999pt x 469.37901pt.
+ [4 <./workorder-status.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 199--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
+Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--223
+Underfull \hbox (badness 10000) in paragraph at lines 214--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
 
  []
 
 
-Overfull \hbox (7.8219pt too wide) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 225--228
+
+ []
+
+
+Overfull \hbox (7.8219pt too wide) in paragraph at lines 229--230
 []\T1/ppl/m/n/10.95 Since this ap-pli-ca-tion is cur-rently be-ing de-vel-oped 
 in Sask-tachewan, the sys-tem will use Staskatchewan
  []
 
-[5] ("Documentation and Specifications.aux") )
+[5]
+<workorder.png, id=27, 766.57822pt x 494.27518pt>
+File: workorder.png Graphic file (type png)
+<use workorder.png>
+Package pdftex.def Info: workorder.png  used on input line 245.
+(pdftex.def)             Requested size: 361.34999pt x 232.99568pt.
+<project-management.png, id=28, 944.24196pt x 426.30696pt>
+File: project-management.png Graphic file (type png)
+<use project-management.png>
+Package pdftex.def Info: project-management.png  used on input line 254.
+(pdftex.def)             Requested size: 361.34999pt x 163.14319pt.
+ [6 <./workorder.png> <./project-management.png>]
+<inventory.png, id=35, 444.37447pt x 451.25732pt>
+File: inventory.png Graphic file (type png)
+<use inventory.png>
+Package pdftex.def Info: inventory.png  used on input line 263.
+(pdftex.def)             Requested size: 361.34999pt x 366.96928pt.
+ [7 <./inventory.png>]
+("Documentation and Specifications.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
 (\end occurred inside a group at level 7)
 
-### simple group (level 7) entered at line 226 ({)
-### simple group (level 6) entered at line 222 ({)
-### simple group (level 5) entered at line 215 ({)
-### simple group (level 4) entered at line 211 ({)
-### simple group (level 3) entered at line 207 ({)
-### simple group (level 2) entered at line 200 ({)
-### simple group (level 1) entered at line 163 ({)
+### simple group (level 7) entered at line 227 ({)
+### simple group (level 6) entered at line 223 ({)
+### simple group (level 5) entered at line 216 ({)
+### simple group (level 4) entered at line 212 ({)
+### simple group (level 3) entered at line 208 ({)
+### simple group (level 2) entered at line 201 ({)
+### simple group (level 1) entered at line 164 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2495 strings out of 492973
- 36507 string characters out of 3126692
- 103185 words of memory out of 3000000
- 6312 multiletter control sequences out of 15000+200000
+ 2568 strings out of 492973
+ 37622 string characters out of 3126692
+ 105591 words of memory out of 3000000
+ 6378 multiletter control sequences out of 15000+200000
  31599 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,926b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,43p,926b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplb8a.pfb><C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/palatino/uplr8a.pfb>
-Output written on "Documentation and Specifications.pdf" (6 pages, 254848 bytes
-).
+Output written on "Documentation and Specifications.pdf" (8 pages, 1136054 byte
+s).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

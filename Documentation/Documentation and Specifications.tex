@@ -40,6 +40,7 @@
 \usepackage{mathpazo} % Palatino font
 \usepackage[legalpaper,margin=0.9in] {geometry}
 \usepackage{fancyhdr}
+\usepackage{float}
 
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
@@ -81,7 +82,7 @@
 	
 	\HRule\\[0.4cm]
 	
-	{\Huge\bfseries Workshop Enterprise Resource Planning Suite Resources and Specifications Document}\\[0.4cm] % Title of your document
+	{\Huge\bfseries Workshop Enterprise Resource Planning Suite Requirements and Specifications Document}\\[0.4cm] % Title of your document
 	
 	\HRule\\[1.5cm]
 	
@@ -107,7 +108,7 @@
 			\large
 			\textsc{Supervisor}\\ % Supervisor's name
 			Karim Naqvi\\
-			M. A.Sc., P.Eng.\\
+			M.A.Sc., P.Eng.\\
 		\end{flushright}
 	\end{minipage}
 	
@@ -154,7 +155,7 @@
 %Introduction%
 \newpage
 \section{Introduction}
-The Workshop Enterprise Resource Planning Suite, or ERP for short, is an administrative task management web application primarily designed for the Engineering Workshop at University of Regina main campus. It is to be the main application to be used for managing incoming and outgoing workorders, which are student and faculty submitted forms requesting the service of the shop. The service provides workorder capacity planning, allowing for the user to actively manage the status of each project, time tracking features for large scale and small scale work, as well as the ability to track the inventory of the workshop, including but not limited to, materials, tools and equipment. 
+The Workshop Enterprise Resource Planning Suite, or ERP for short, is an administrative task management web application primarily designed for the Engineering Workshop at University of Regina main campus. It is to be the main application to be used for managing incoming workorders, which are student and faculty submitted forms requesting the service of the shop. The service provides workorder capacity planning, allowing for the user to actively manage the status of each project, time tracking features for large scale and small scale work, as well as the ability to track the inventory of the workshop, including but not limited to, materials, tools and equipment. 
 \subsection{Purpose}
 This system was designed to replace the previous methods of workorder, time, and inventory tracking, centralizing all aspects into one powerful application that can be accessed online. Workorders currently must be submitted via paper form directly to the workshop during its operating hours. The form must then be reviewed by the workshop manager and if accepted, future meetings are scheduled. All workorders submitted are then stored physically in binders, which date back to the opening of the workshop. All materials and inventory are also stored physically. This project intends to automate all workorders and have then be submitted and archived electronically. As well, the system is intended to track all scopes of projects, ranging from small miscellaneous tasks to larger scale projects in such a fashion that the workshop manager can schedule them effectively in advance. 
 \subsection{Scope}
@@ -225,8 +226,44 @@ As well, all materials submitted into the inventory page must be properly accoun
 \newline
 {\setlength{\parindent}{0cm}
 
-Since this application is currently being  developed in Sasktachewan, the system will use Staskatchewan standard time and will not account for any daylight savings that may occur if the program is used elsewhere in the work. 
+Since this application is currently being  developed in Sasktachewan, the system will use Staskatchewan standard time and will not account for any daylight savings that may occur if the program is used elsewhere in the work.
+
+\subsection{User Documentation}
+If there are any questions or concerns about running the program in its current state, there will be a set of two readme documents attached with both major aspects of the project. The frontend readme will describe the necessary information in running the server for the frontend, including how to run a localhost version in a development enviroment for testing. The backend readme as the information regarding running the backend server locally for development.
+
+\newpage 
 \section{System Features}
+Since this system aims to modernize the current format of recording workorders and materials, this has a high priority for the workshop. While still a small scale project, it has potential to be vital in day to day operations for the engineering workshop. 
+
+\subsection{Product Features}
+The ERP suite stores the data of the workshop in separate tables inside the database.
+
+\subsubsection{Workorders}
+On the workorders page, workorders are stored on the data are stored in the workorder table. Each entry includes the client, faculty, use, and semester information, as well as the dates of when the request was created and when the workorder is required to be finished, based on a workorder submission. The workorder table also stores the information associated to the workorder process, containing fields for statuses of a workorder, comments on the workorder, and any other additional attachments. The following figure showcases these relationships. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5in]{workorder.png}\\
+	\caption{Workorker Class Diagram}
+	\label{fig:tobias}
+\end{figure}
+
+\subsubsection{Project Management}
+For the project management system, each time entry involves having a specific type and the ability to insert billable time to an entry. Each Entry can then be considered an Event, which all those involved in the entry can be notified. The following class diagram showcases these relationships. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5in]{project-management.png}\\
+	\caption{Project Management Class Diagram}
+	\label{fig:tobias}
+\end{figure}
+\newpage
+\subsubsection{Inventory}
+The following class diagram showcases the inventory tables, and what goes into each particular material upon entry into the system. Every material has a type and falls into a particular category. There are a certain amount of it, stored using the appropriate unit. Each material is sold from a vendor, and each material is ordered from these specific vendors in specific orders. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=5in]{inventory.png}\\
+	\caption{Inventory Class Diagram}
+	\label{fig:tobias}
+\end{figure}
 
 \section{External Interface Requirements}
 \section{Non-Functional Requirements}
