@@ -155,7 +155,13 @@
 
 \newpage
 \section{Introduction}
-The Workshop Enterprise Resource Planning Suite is an administrative overview and task management software designed for the University of Regina's on-campus engineering workshop. It is the primary workshop for campus for engineering students and administration, handling projects ranging from small in shop fixes to large scale capstone projects. This ERP is design to be the primary management tool used for the workshop, handling all day-to-day data for the shop. The ERP manages all incoming workorders, which are submissions by the student and/or faculty member detailing the specific request of the project they need the workshop for. All workorders are submitted, viewed and processed through this web application. As well, this system handles the project management by tracking the time of the billable and non-billable hours spent in the workshop. The third main feature of the application is the ability to manage the inventory of the shop, with the ability to search and find all the necessary data for a particular item in the workshop. With these features, the ERP is designed to become the primary source of data relating to the workshop and its activities. 
+The Workshop Enterprise Resource Planning Suite is an administrative overview and task management software designed for the University of Regina's on-campus engineering workshop. This web application allows the workshop manager to access and process workorders, manage the inventory of the workshop and manage each project in the shop. The application can be accessed through any modern browser and has two main components, the frontend user interface for the workshop manager, and the backend which responds to the frontend requests. 
+
+The program is designed as a web application using the ASP.Net web API framework, written in the C\# language, to handle the backend functionalities of the application. In order to bridge the backend with the database of the application, the system uses Entity Framework core, which allows for the backend to retain full functionality without referring to a predetermined database model.
+\newline
+{\setlength{\parindent}{0cm}
+
+The frontend makes use of a javascript framework called Vue.js, which allows for dynamic user interfaces and web applications that handle multiple events one page, much like the ERP suite. This allows the program to do multiple complex tasks on the same page, such as handle multiple workorders, and showcase the data that is stored on the database via the backend. 
 
 \subsection{Background}
 Previous to the design of the ERP, the engineering workshop primarily stored all workorder data physically. All workorders were submitted in person on workorder forms, which are then stored into filled binders for recording purposes. All workorders ever submitted are kept in these binders and since they are filled out by hand, there are no copies made. Workorders, previous to this program, have not been copied.
@@ -221,6 +227,68 @@ The second section accessible by the left navigational bar is the time tracking 
 
 \subsection{Hardware Architecture}
 Currently the application is a centralized system, with the client's operating machine and the server hosting the workshop's databases to be in the same location, thus allowing for the system to have a secure connection based on the university's internet. The type of server hosting the backend of the project is a REST web server, allowing the program to operate in a stateless environment, allowing the freedom of the application to transfer data to and from the database. This server is constructed using ASP.NET and entity framework, primarily written in the C\# language.   
+
+\subsection{Software Architecture}
+The three main pages are divided into their own sections, with each having their own specific connection to the back end, however, each page has a connection with each other as data is shared throughout the application. In total, each section requests and portrays the same data, but it is referenced in different ways. The following diagram showcases how each data table is related in the database.  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7in]{class.png}\\
+	\caption{Full class diagram of the ERP}
+	\label{fig:tobias}
+\end{figure}
+
+Since each page accesses the database in different ways, data is requested for and received in different fashions. 
+\subsubsection{Workorders}
+On the workorders page, workorders are stored on the data are stored in the workorder table. Each entry includes the client, faculty, use, and semester information, as well as the dates of when the request was created and when the workorder is required to be finished, based on a workorder submission. The workorder table also stores the information associated to the workorder process, containing fields for statuses of a workorder, comments on the workorder, and any other additional attachments. The following figure showcases these relationships. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{workorder.png}\\
+	\caption{Workorker Class Diagram}
+	\label{fig:tobias}
+\end{figure}
+
+\subsubsection{Project Management}
+For the project management system, each time entry involves having a specific type and the ability to insert billable time to an entry. Each Entry can then be considered an Event, which all those involved in the entry can be notified. The following class diagram showcases these relationships. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{project-management.png}\\
+	\caption{Project Management Class Diagram}
+	\label{fig:tobias}
+\end{figure}
+
+\subsubsection{Inventory}
+The following class diagram showcases the inventory tables, and what goes into each particular material upon entry into the system. Every material has a type and falls into a particular category. There are a certain amount of it, stored using the appropriate unit. Each material is sold from a vendor, and each material is ordered from these specific vendors in specific orders. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{Inventory.png}\\
+	\caption{Inventory Class Diagram}
+	\label{fig:tobias}
+\end{figure}
+\newpage
+
+\section{System Design}
+While creating the ERP suite, the following protocols and design patterns were used in order to perfect the web application such that is was effective in its functionality and comfortable to for the workshop manager to use. 
+
+\subsection{Frontend Design}
+The frontend of the program was created using a javascript framework called Vue.js, which is designed for web APIs and asynchronous CRUD functionality. While other similar frontend frameworks such as Razor Pages, which is the option provided by ASP.NET, and Angular, Google's own javascript framework, can provide the functionality that would be needed for the operation of the ERP suite, the decision to ultimately to use Vue was because of its extensive documentation and popularity in the web development world. It was the framework that had the most documented features available for use, allowing for more options and features be possible to implement inside the program. A typical Vue file has three distinct sections for the HTML code, styling and scripting, meaning that all of the features for a particular page is developed on a single page without having to switch in between files. This coupled with the fact that since Vue can run using a node packaging manager, it is able to be developed asynchronously in a development sever, are the reasonys as to why this framework was the primary choice for the ERP suite. As well, Vue allows for more personalization, without having to be locked into a template designed by a framework.
+\newline
+{\setlength{\parindent}{0cm}
+
+\subsubsection{UI Standards}
+In the ERP suite, there are a set of user interface standards that are followed for consistency throughout the frontend design. 
+
+\paragraph{Fonts}
+Throughout the entire program, consistency in the font choice is crucial as to simplify the design of the program. The headings of the program as well as any standout text appearing on the site, such as in the side navigational bars on either side, use the Montserrat font. For the actual content of the program, the Roboto font was used. 
+
+\paragraph{Palette}
+In its current status, the ERP suite uses a blue-gray colour palette was used. While other, brighter colours are introduced throughout the application, these are primarily used for notification purposes, such as defining the status of workorders or reminders regarding deadlines approaching. To contrast these vibrant colours, a softer and calmer colour palette was needed such that notifications can still pop out for the user, signifying the importance of the task linked to them. The following figure showcases the particular palette used for the ERP suite. Attached are the hexadecimal numbers for each colour in the palette. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=5in]{palette.png}\\
+	\caption{Colour palette used for the ERP suite}
+	\label{fig:tobias}
+\end{figure}
+\newpage
 
 
 \section{Data Design}

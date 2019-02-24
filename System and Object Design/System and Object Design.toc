@@ -8,5 +8,14 @@
 \contentsline {section}{\numberline {3}System Architecture}{5}
 \contentsline {subsection}{\numberline {3.1}Logical View}{5}
 \contentsline {subsection}{\numberline {3.2}Hardware Architecture}{5}
-\contentsline {section}{\numberline {4}Data Design}{5}
-\contentsline {section}{\numberline {5}External Interface Design}{5}
+\contentsline {subsection}{\numberline {3.3}Software Architecture}{5}
+\contentsline {subsubsection}{\numberline {3.3.1}Workorders}{6}
+\contentsline {subsubsection}{\numberline {3.3.2}Project Management}{7}
+\contentsline {subsubsection}{\numberline {3.3.3}Inventory}{7}
+\contentsline {section}{\numberline {4}System Design}{8}
+\contentsline {subsection}{\numberline {4.1}Frontend Design}{8}
+\contentsline {subsubsection}{\numberline {4.1.1}UI Standards}{8}
+\contentsline {paragraph}{\numberline {4.1.1.1}Fonts}{8}
+\contentsline {paragraph}{\numberline {4.1.1.2}Palette}{8}
+\contentsline {section}{\numberline {5}Data Design}{9}
+\contentsline {section}{\numberline {6}External Interface Design}{9}

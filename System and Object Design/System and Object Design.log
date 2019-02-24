@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  19 FEB 2019 21:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  22 FEB 2019 17:52
 entering extended mode
 **"./System and Object Design.tex"
 ("System and Object Design.tex"
@@ -119,7 +119,23 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks19
 \@floatcapt=\box27
 )
-("System and Object Design.aux")
+("System and Object Design.aux"
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
+)
 \openout1 = `"System and Object Design.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -135,8 +151,7 @@ LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 55.
-
-("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+ ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 ("C:\Users\konst\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
@@ -302,25 +317,29 @@ This may cause the page layout to be inconsistent, however.
 \openout4 = `"System and Object Design.lof"'.
 
  [2]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 160.
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--169
+ []
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 166.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--182
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
 
@@ -328,48 +347,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--190
 <front-back.png, id=22, 347.58429pt x 377.6968pt>
 File: front-back.png Graphic file (type png)
 <use front-back.png>
-Package pdftex.def Info: front-back.png  used on input line 206.
+Package pdftex.def Info: front-back.png  used on input line 212.
 (pdftex.def)             Requested size: 216.81pt x 235.5931pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--211
+Underfull \hbox (badness 10000) in paragraph at lines 209--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
-[5 <./front-back.png>] ("System and Object Design.aux") )
-(\end occurred inside a group at level 6)
+<class.png, id=23, 1626.075pt x 1362.59062pt>
+File: class.png Graphic file (type png)
+<use class.png>
+Package pdftex.def Info: class.png  used on input line 235.
+(pdftex.def)             Requested size: 505.89pt x 423.9165pt.
 
-### simple group (level 6) entered at line 218 ({)
-### simple group (level 5) entered at line 214 ({)
-### simple group (level 4) entered at line 189 ({)
-### simple group (level 3) entered at line 185 ({)
-### simple group (level 2) entered at line 181 ({)
-### simple group (level 1) entered at line 168 ({)
+Overfull \hbox (21.68011pt too wide) in paragraph at lines 235--235
+ [][] 
+ []
+
+[5 <./front-back.png>]
+<workorder.png, id=28, 766.57822pt x 494.27518pt>
+File: workorder.png Graphic file (type png)
+<use workorder.png>
+Package pdftex.def Info: workorder.png  used on input line 245.
+(pdftex.def)             Requested size: 361.34999pt x 232.99568pt.
+<project-management.png, id=29, 944.24196pt x 426.30696pt>
+File: project-management.png Graphic file (type png)
+<use project-management.png>
+Package pdftex.def Info: project-management.png  used on input line 254.
+(pdftex.def)             Requested size: 361.34999pt x 163.14319pt.
+ [6 <./class.png> <./workorder.png>]
+<Inventory.png, id=35, 444.37447pt x 451.25732pt>
+File: Inventory.png Graphic file (type png)
+<use Inventory.png>
+Package pdftex.def Info: Inventory.png  used on input line 263.
+(pdftex.def)             Requested size: 361.34999pt x 366.96928pt.
+ [7 <./project-management.png> <./Inventory.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.284 \\~
+         \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<palette.png, id=41, 509.33144pt x 127.33286pt>
+File: palette.png Graphic file (type png)
+<use palette.png>
+Package pdftex.def Info: palette.png  used on input line 288.
+(pdftex.def)             Requested size: 361.34999pt x 90.33894pt.
+[8 <./palette.png>] [9] ("System and Object Design.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 8)
+
+### simple group (level 8) entered at line 275 ({)
+### simple group (level 7) entered at line 224 ({)
+### simple group (level 6) entered at line 220 ({)
+### simple group (level 5) entered at line 195 ({)
+### simple group (level 4) entered at line 191 ({)
+### simple group (level 3) entered at line 187 ({)
+### simple group (level 2) entered at line 174 ({)
+### simple group (level 1) entered at line 162 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2553 strings out of 492973
- 37251 string characters out of 3126692
- 104552 words of memory out of 3000000
- 6366 multiletter control sequences out of 15000+200000
+ 2579 strings out of 492973
+ 37696 string characters out of 3126692
+ 104591 words of memory out of 3000000
+ 6387 multiletter control sequences out of 15000+200000
  31599 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,1207b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,43p,1276b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplb8a.pfb><C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/palatino/uplr8a.pfb>
-Output written on "System and Object Design.pdf" (6 pages, 281512 bytes).
+Output written on "System and Object Design.pdf" (10 pages, 1358352 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
