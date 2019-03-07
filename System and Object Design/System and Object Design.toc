@@ -17,5 +17,7 @@
 \contentsline {subsubsection}{\numberline {4.1.1}UI Standards}{8}
 \contentsline {paragraph}{\numberline {4.1.1.1}Fonts}{8}
 \contentsline {paragraph}{\numberline {4.1.1.2}Palette}{8}
-\contentsline {section}{\numberline {5}Data Design}{9}
-\contentsline {section}{\numberline {6}External Interface Design}{9}
+\contentsline {subsection}{\numberline {4.2}Backend Design}{8}
+\contentsline {subsubsection}{\numberline {4.2.1}API}{9}
+\contentsline {subsection}{\numberline {4.3}Database Design}{9}
+\contentsline {section}{\numberline {5}External Interface Design}{10}

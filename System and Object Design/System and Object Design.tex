@@ -271,8 +271,6 @@ While creating the ERP suite, the following protocols and design patterns were u
 
 \subsection{Frontend Design}
 The frontend of the program was created using a javascript framework called Vue.js, which is designed for web APIs and asynchronous CRUD functionality. While other similar frontend frameworks such as Razor Pages, which is the option provided by ASP.NET, and Angular, Google's own javascript framework, can provide the functionality that would be needed for the operation of the ERP suite, the decision to ultimately to use Vue was because of its extensive documentation and popularity in the web development world. It was the framework that had the most documented features available for use, allowing for more options and features be possible to implement inside the program. A typical Vue file has three distinct sections for the HTML code, styling and scripting, meaning that all of the features for a particular page is developed on a single page without having to switch in between files. This coupled with the fact that since Vue can run using a node packaging manager, it is able to be developed asynchronously in a development sever, are the reasonys as to why this framework was the primary choice for the ERP suite. As well, Vue allows for more personalization, without having to be locked into a template designed by a framework.
-\newline
-{\setlength{\parindent}{0cm}
 
 \subsubsection{UI Standards}
 In the ERP suite, there are a set of user interface standards that are followed for consistency throughout the frontend design. 
@@ -288,10 +286,38 @@ In its current status, the ERP suite uses a blue-gray colour palette was used. W
 	\caption{Colour palette used for the ERP suite}
 	\label{fig:tobias}
 \end{figure}
+
+\subsection{Backend Design}
+For the ERP suite, the backend aspect of the application is built using the ASP.NET web API framework. It uses the C\# programming language, and uses the ASP.NET packages and libraries allows for asynchronous access to the application's database as well as a connection to the frontend. Because of the nature of ASP.NET, the frontend can send requests during any time during runtime and can be a truly dynamic system.
+\newline
+{\setlength{\parindent}{0cm} 
+
+Several other options were considered during the planning and design phases. other options for server side programming such as PHP, a completely server side language and Node.js, which is a javascript framework that allows for the use of the language as a server side scripting. However, both ultimately were not applicable for the purposes of this program. The main advantage of using ASP.NET over these options is is the use of the C\# language, and the access to the framework's libraries which are used throughout the program. 
+\newline
+{\setlength{\parindent}{0cm} 
+
+The backend is broken up into 5 separate projects, which each providing a certain function which combine during runtime. The 5 different projects are API, Common, Models, Repositiories, and Services. 
+\newline
+{\setlength{\parindent}{0cm}
+ 
+\subsubsection{API}
+In the API project, the start up and controller code is located. The start up code is necessary for each web API to run, creating the access each library that will be used throughout the program. This program also configures the different database contexts, a feature of Entity Framework Core that enables the system to create a connection to the database in an abstract fashion. As well, connection with the frontend web pages are established. 
+\newline
+{\setlength{\parindent}{0cm} 
+
+The way that ASP.NET is designed, controllers are used to create the endpoints which will send the necessary data to the frontend. Each endpoint is created using the CRUD methodology, using the GET, POST, PUT and DELETE requests. Each request states its type of message, and send a response back to the frontend, depending on the type of request made. Data that is requested by the frontend will be sent if the request is valid and if the particular entry exists. Before any requests are made by the user, they musted be authorized by the account controller. The system will return a 403 error if non-authorized requests are made. 
+
+\subsubsection{Common}
+
+
+\subsection{Database Design}
+The main aspect for communicating with the system's database is Entity Framework Core. It allows the backend, which is written using ASP.NET, to work with and send requests to the database using .NET objects instead of the standard MySQL database language. This automates the database requests without having to write the SQL code for every request. Since the web API is designed in an asynchronous use, creating this layer of abstraction allows for the program run multiple requests with less actual scripting. 
+\newline
+{\setlength{\parindent}{0cm}
+
+In its current design, the database will be hosted on the machine of the workshop manager located in the workshop, with the service connecting to the university internet when the application is running. Since the database does not need to store massive amounts of data, a larger server on university campus or a non-local server is not required but the application is open to these options in future implementations. 
+
 \newpage
-
-
-\section{Data Design}
 \section{External Interface Design}
 
 \end{document}

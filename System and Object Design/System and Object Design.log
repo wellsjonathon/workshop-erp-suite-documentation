@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  22 FEB 2019 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  6 MAR 2019 15:40
 entering extended mode
 **"./System and Object Design.tex"
 ("System and Object Design.tex"
@@ -392,36 +392,48 @@ File: Inventory.png Graphic file (type png)
 Package pdftex.def Info: Inventory.png  used on input line 263.
 (pdftex.def)             Requested size: 361.34999pt x 366.96928pt.
  [7 <./project-management.png> <./Inventory.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--276
+<palette.png, id=41, 509.33144pt x 127.33286pt>
+File: palette.png Graphic file (type png)
+<use palette.png>
+Package pdftex.def Info: palette.png  used on input line 285.
+(pdftex.def)             Requested size: 361.34999pt x 90.33894pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.284 \\~
-         \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
-<palette.png, id=41, 509.33144pt x 127.33286pt>
-File: palette.png Graphic file (type png)
-<use palette.png>
-Package pdftex.def Info: palette.png  used on input line 288.
-(pdftex.def)             Requested size: 361.34999pt x 90.33894pt.
-[8 <./palette.png>] [9] ("System and Object Design.aux")
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--302
+
+ []
+
+[8 <./palette.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
+
+ []
+
+[9] [10] ("System and Object Design.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred inside a group at level 8)
+(\end occurred inside a group at level 12)
 
-### simple group (level 8) entered at line 275 ({)
+### simple group (level 12) entered at line 315 ({)
+### simple group (level 11) entered at line 306 ({)
+### simple group (level 10) entered at line 301 ({)
+### simple group (level 9) entered at line 297 ({)
+### simple group (level 8) entered at line 293 ({)
 ### simple group (level 7) entered at line 224 ({)
 ### simple group (level 6) entered at line 220 ({)
 ### simple group (level 5) entered at line 195 ({)
@@ -433,18 +445,18 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2579 strings out of 492973
  37696 string characters out of 3126692
- 104591 words of memory out of 3000000
+ 105591 words of memory out of 3000000
  6387 multiletter control sequences out of 15000+200000
  31599 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,1276b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,43p,1276b,457s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplb8a.pfb><C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/palatino/uplr8a.pfb>
-Output written on "System and Object Design.pdf" (10 pages, 1358352 bytes).
+Output written on "System and Object Design.pdf" (11 pages, 1361486 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
