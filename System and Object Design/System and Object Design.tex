@@ -229,7 +229,7 @@ The second section accessible by the left navigational bar is the time tracking 
 Currently the application is a centralized system, with the client's operating machine and the server hosting the workshop's databases to be in the same location, thus allowing for the system to have a secure connection based on the university's internet. The type of server hosting the backend of the project is a REST web server, allowing the program to operate in a stateless environment, allowing the freedom of the application to transfer data to and from the database. This server is constructed using ASP.NET and entity framework, primarily written in the C\# language.   
 
 \subsection{Software Architecture}
-The three main pages are divided into their own sections, with each having their own specific connection to the back end, however, each page has a connection with each other as data is shared throughout the application. In total, each section requests and portrays the same data, but it is referenced in different ways. The following diagram showcases how each data table is related in the database.  
+The three main pages are divided into their own sections, with each having their own specific connection to the back end, however, each page has a connection with each other as data is shared throughout the application. In total, each section requests and portrays the same data, but it is referenced in different ways. The following diagram showcases how each data table is related in the database.   
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7in]{class.png}\\
@@ -237,7 +237,8 @@ The three main pages are divided into their own sections, with each having their
 	\label{fig:tobias}
 \end{figure}
 
-Since each page accesses the database in different ways, data is requested for and received in different fashions. 
+Since each page accesses the database in different ways, data is requested for and received in different fashions. In addition, the status of the workorder has its own data structure, symbolizing the different states that a potential workorder undergoes during the production. The workflow showcases how each different state of a workorder.
+\newpage 
 \subsubsection{Workorders}
 On the workorders page, workorders are stored on the data are stored in the workorder table. Each entry includes the client, faculty, use, and semester information, as well as the dates of when the request was created and when the workorder is required to be finished, based on a workorder submission. The workorder table also stores the information associated to the workorder process, containing fields for statuses of a workorder, comments on the workorder, and any other additional attachments. The following figure showcases these relationships. 
 \begin{figure}[H]
@@ -246,7 +247,23 @@ On the workorders page, workorders are stored on the data are stored in the work
 	\caption{Workorker Class Diagram}
 	\label{fig:tobias}
 \end{figure}
-
+\subsubsection{Workflow}
+The workflow section details each state that a workorder goes through from submission to competition. Each state showcases exactly at what point of the process the workorder is at and is highlighted with the appropriate colour for easier understanding. Each state can transition to another at any point, either by the workshop manager or automatically when a certain deadline is passed. The following figure showcases the possible states that a workorder can have during the process. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=2in]{workflow-diagram.png}\\
+	\caption{The flow of a Workorder}
+	\label{fig:tobias}
+\end{figure}
+\newpage
+Each state uses a transition period which highlights the change of the state from one to another. The actual action of moving from one state to another is stored, with the information as to why the change had occurred and when it was done. The following diagram showcases the relationships of these data points. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=3in]{workflow-class.png}\\
+	\caption{The workflow class diagram}
+	\label{fig:tobias}
+\end{figure}
+\newpage
 \subsubsection{Project Management}
 For the project management system, each time entry involves having a specific type and the ability to insert billable time to an entry. Each Entry can then be considered an Event, which all those involved in the entry can be notified. The following class diagram showcases these relationships. 
 \begin{figure}[H]
@@ -307,8 +324,14 @@ In the API project, the start up and controller code is located. The start up co
 
 The way that ASP.NET is designed, controllers are used to create the endpoints which will send the necessary data to the frontend. Each endpoint is created using the CRUD methodology, using the GET, POST, PUT and DELETE requests. Each request states its type of message, and send a response back to the frontend, depending on the type of request made. Data that is requested by the frontend will be sent if the request is valid and if the particular entry exists. Before any requests are made by the user, they musted be authorized by the account controller. The system will return a 403 error if non-authorized requests are made. 
 
-\subsubsection{Common}
+\subsubsection{Common and Services}
+The common and services projects of the backend are more passive in nature, as these two sections host the dependencies and the connections to the libraries that is needed for an ASP.NET API to function properly. These two projects are meant as read only and do not see any actual changes during the development of the ERP suite. 
 
+\subsubsection{Models}
+The models project hosts the structure of the each data table that populates the database. Each data table is created exists as a C\# class, which each data variable publicly stored. Each varible exists as its own entry in a SQL table. When a class inherits from another, a variable of that particular class is created. Each model is organized to its own folder dependent on its particular section of the ERP suite. Actual data is not stored in these variables, but the database tables will be created based on their structure and relationships with one another.
+
+\subsubsection{Repositories}
+This is the project that hosts the contexts which upon building all the projects, will create the database based on how the context maps out the database. Each table that needs to be created will have its own database set, which the controller then references to when accessing the database. These database set variables a different name then that of the models, such that when these are referenced, the actual database tables are accessed and not the models in the model project. As well, any data that must manually loaded into a particular database, such as the workorder state table as it hosts a description based on the purpose of this state, will written here, thus appearing in the table when the database is created. The method uses is called OnModelCreating, and each particular data table with required data is created as a new entry, such that they will be written into the table upon runtime. Upon the creation of the database, an inital migration must be run such that the backend knows what kind of a database is needed and in what context. By giving the context created in this section, the database will then reflect said context. 
 
 \subsection{Database Design}
 The main aspect for communicating with the system's database is Entity Framework Core. It allows the backend, which is written using ASP.NET, to work with and send requests to the database using .NET objects instead of the standard MySQL database language. This automates the database requests without having to write the SQL code for every request. Since the web API is designed in an asynchronous use, creating this layer of abstraction allows for the program run multiple requests with less actual scripting. 
@@ -317,8 +340,6 @@ The main aspect for communicating with the system's database is Entity Framework
 
 In its current design, the database will be hosted on the machine of the workshop manager located in the workshop, with the service connecting to the university internet when the application is running. Since the database does not need to store massive amounts of data, a larger server on university campus or a non-local server is not required but the application is open to these options in future implementations. 
 
-\newpage
-\section{External Interface Design}
 
 \end{document}
 
