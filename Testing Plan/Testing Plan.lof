@@ -1,0 +1,4 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces A time entry in the from of a JSON response from the server. For a GET all request, all objects in the database will show}}{4}
+\contentsline {figure}{\numberline {2}{\ignorespaces A time entry JSON request to be sent to the server.}}{5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sending a POST request in Postman}}{8}
+\contentsline {figure}{\numberline {4}{\ignorespaces Development Server in use}}{8}
