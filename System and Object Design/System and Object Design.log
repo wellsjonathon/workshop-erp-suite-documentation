@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  9 MAR 2019 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  9 APR 2019 13:58
 entering extended mode
 **"./System and Object Design.tex"
 ("System and Object Design.tex"
@@ -120,6 +120,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box27
 )
 ("System and Object Design.aux"
+
+LaTeX Warning: Label `fig:tobias' multiply defined.
+
 
 LaTeX Warning: Label `fig:tobias' multiply defined.
 
@@ -318,7 +321,13 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[1] ("System and Object Design.lof")
+[1] ("System and Object Design.lof"
+Overfull \hbox (27.77345pt too wide) in paragraph at lines 2--2
+ [][] []\T1/ppl/m/n/10.95 Steps to-ward Rest Scoure: https://martinfowler.com/a
+rticles/richardsonMaturityModel.html []  
+ []
+
+)
 \tf@lof=\write4
 \openout4 = `"System and Object Design.lof"'.
 
@@ -350,11 +359,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--196
  []
 
 [4]
-<front-back.png, id=22, 347.58429pt x 377.6968pt>
+<front-back.png, id=22, 477.49821pt x 330.80733pt>
 File: front-back.png Graphic file (type png)
 <use front-back.png>
 Package pdftex.def Info: front-back.png  used on input line 212.
-(pdftex.def)             Requested size: 216.81pt x 235.5931pt.
+(pdftex.def)             Requested size: 216.81pt x 150.2046pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 209--217
 
@@ -370,87 +379,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
-<class.png, id=23, 1626.075pt x 1362.59062pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--232
+
+ []
+
+<rest.png, id=23, 573.42804pt x 312.73982pt>
+File: rest.png Graphic file (type png)
+<use rest.png>
+Package pdftex.def Info: rest.png  used on input line 237.
+(pdftex.def)             Requested size: 289.07999pt x 157.66273pt.
+
+Overfull \hbox (13.88832pt too wide) in paragraph at lines 238--238
+[]\T1/ppl/m/n/10.95 Figure 2: Steps to-ward Rest Scoure: https://martinfowler.c
+om/articles/richardsonMaturityModel.html 
+ []
+
+[5 <./front-back.png>]
+<class.png, id=28, 1626.075pt x 1362.59062pt>
 File: class.png Graphic file (type png)
 <use class.png>
-Package pdftex.def Info: class.png  used on input line 235.
+Package pdftex.def Info: class.png  used on input line 253.
 (pdftex.def)             Requested size: 505.89pt x 423.9165pt.
 
-Overfull \hbox (21.68011pt too wide) in paragraph at lines 235--235
+Overfull \hbox (21.68011pt too wide) in paragraph at lines 253--253
  [][] 
  []
 
-[5 <./front-back.png>] [6 <./class.png>]
-<workorder.png, id=32, 766.57822pt x 494.27518pt>
+[6 <./rest.png>] [7 <./class.png>]
+<workorder.png, id=37, 766.57822pt x 494.27518pt>
 File: workorder.png Graphic file (type png)
 <use workorder.png>
-Package pdftex.def Info: workorder.png  used on input line 246.
+Package pdftex.def Info: workorder.png  used on input line 264.
 (pdftex.def)             Requested size: 361.34999pt x 232.99568pt.
-<workflow-diagram.png, id=33, 294.67232pt x 372.53464pt>
+<workflow-diagram.png, id=38, 294.67232pt x 372.53464pt>
 File: workflow-diagram.png Graphic file (type png)
 <use workflow-diagram.png>
-Package pdftex.def Info: workflow-diagram.png  used on input line 254.
+Package pdftex.def Info: workflow-diagram.png  used on input line 272.
 (pdftex.def)             Requested size: 144.54pt x 182.73683pt.
- [7 <./workorder.png> <./workflow-diagram.png>]
-<workflow-class.png, id=39, 381.56839pt x 339.41089pt>
+ [8 <./workorder.png> <./workflow-diagram.png>]
+<workflow-class.png, id=44, 381.56839pt x 339.41089pt>
 File: workflow-class.png Graphic file (type png)
 <use workflow-class.png>
-Package pdftex.def Info: workflow-class.png  used on input line 262.
+Package pdftex.def Info: workflow-class.png  used on input line 280.
 (pdftex.def)             Requested size: 216.81pt x 192.85509pt.
- [8 <./workflow-class.png>]
-<project-management.png, id=44, 944.24196pt x 426.30696pt>
+ [9 <./workflow-class.png>]
+<project-management.png, id=49, 944.24196pt x 426.30696pt>
 File: project-management.png Graphic file (type png)
 <use project-management.png>
-Package pdftex.def Info: project-management.png  used on input line 271.
+Package pdftex.def Info: project-management.png  used on input line 289.
 (pdftex.def)             Requested size: 361.34999pt x 163.14319pt.
-<Inventory.png, id=45, 444.37447pt x 451.25732pt>
+<Inventory.png, id=50, 444.37447pt x 451.25732pt>
 File: Inventory.png Graphic file (type png)
 <use Inventory.png>
-Package pdftex.def Info: Inventory.png  used on input line 280.
+Package pdftex.def Info: Inventory.png  used on input line 298.
 (pdftex.def)             Requested size: 361.34999pt x 366.96928pt.
- [9 <./project-management.png> <./Inventory.png>]
-<palette.png, id=51, 509.33144pt x 127.33286pt>
+ [10 <./project-management.png> <./Inventory.png>]
+<palette.png, id=56, 509.33144pt x 127.33286pt>
 File: palette.png Graphic file (type png)
 <use palette.png>
-Package pdftex.def Info: palette.png  used on input line 302.
+Package pdftex.def Info: palette.png  used on input line 320.
 (pdftex.def)             Requested size: 361.34999pt x 90.33894pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--311
+Underfull \hbox (badness 10000) in paragraph at lines 326--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--315
+Underfull \hbox (badness 10000) in paragraph at lines 330--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
 
  []
 
-[10 <./palette.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 321--324
+[11 <./palette.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 338--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--340
+Underfull \hbox (badness 10000) in paragraph at lines 345--348
 
  []
 
-[11] ("System and Object Design.aux")
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--364
+
+ []
+
+[12] [13] ("System and Object Design.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred inside a group at level 12)
+(\end occurred inside a group at level 14)
 
-### simple group (level 12) entered at line 339 ({)
-### simple group (level 11) entered at line 323 ({)
-### simple group (level 10) entered at line 318 ({)
-### simple group (level 9) entered at line 314 ({)
-### simple group (level 8) entered at line 310 ({)
+### simple group (level 14) entered at line 363 ({)
+### simple group (level 13) entered at line 347 ({)
+### simple group (level 12) entered at line 340 ({)
+### simple group (level 11) entered at line 336 ({)
+### simple group (level 10) entered at line 332 ({)
+### simple group (level 9) entered at line 328 ({)
+### simple group (level 8) entered at line 231 ({)
 ### simple group (level 7) entered at line 224 ({)
 ### simple group (level 6) entered at line 220 ({)
 ### simple group (level 5) entered at line 195 ({)
@@ -460,20 +493,20 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 162 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2589 strings out of 492973
- 37924 string characters out of 3126692
- 105592 words of memory out of 3000000
- 6395 multiletter control sequences out of 15000+200000
+ 2594 strings out of 492973
+ 37983 string characters out of 3126692
+ 106592 words of memory out of 3000000
+ 6399 multiletter control sequences out of 15000+200000
  31599 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,1276b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,43p,1276b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/base/8r.enc}<C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplb8a.pfb><C:/Users/konst/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/palatino/uplr8a.pfb>
-Output written on "System and Object Design.pdf" (12 pages, 1556335 bytes).
+Output written on "System and Object Design.pdf" (14 pages, 1760309 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

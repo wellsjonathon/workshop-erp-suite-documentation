@@ -7,20 +7,21 @@
 \contentsline {subsection}{\numberline {2.2}Assumptions and Constraints}{4}
 \contentsline {section}{\numberline {3}System Architecture}{5}
 \contentsline {subsection}{\numberline {3.1}Logical View}{5}
-\contentsline {subsection}{\numberline {3.2}Hardware Architecture}{5}
-\contentsline {subsection}{\numberline {3.3}Software Architecture}{5}
-\contentsline {subsubsection}{\numberline {3.3.1}Workorders}{7}
-\contentsline {subsubsection}{\numberline {3.3.2}Workflow}{7}
-\contentsline {subsubsection}{\numberline {3.3.3}Project Management}{9}
-\contentsline {subsubsection}{\numberline {3.3.4}Inventory}{9}
-\contentsline {section}{\numberline {4}System Design}{10}
-\contentsline {subsection}{\numberline {4.1}Frontend Design}{10}
-\contentsline {subsubsection}{\numberline {4.1.1}UI Standards}{10}
-\contentsline {paragraph}{\numberline {4.1.1.1}Fonts}{10}
-\contentsline {paragraph}{\numberline {4.1.1.2}Palette}{10}
-\contentsline {subsection}{\numberline {4.2}Backend Design}{10}
-\contentsline {subsubsection}{\numberline {4.2.1}API}{11}
-\contentsline {subsubsection}{\numberline {4.2.2}Common and Services}{11}
-\contentsline {subsubsection}{\numberline {4.2.3}Models}{11}
-\contentsline {subsubsection}{\numberline {4.2.4}Repositories}{11}
-\contentsline {subsection}{\numberline {4.3}Database Design}{11}
+\contentsline {subsubsection}{\numberline {3.1.1}REST API}{5}
+\contentsline {subsection}{\numberline {3.2}Hardware Architecture}{6}
+\contentsline {subsection}{\numberline {3.3}Software Architecture}{6}
+\contentsline {subsubsection}{\numberline {3.3.1}Workorders}{8}
+\contentsline {subsubsection}{\numberline {3.3.2}Workflow}{8}
+\contentsline {subsubsection}{\numberline {3.3.3}Project Management}{10}
+\contentsline {subsubsection}{\numberline {3.3.4}Inventory}{10}
+\contentsline {section}{\numberline {4}System Design}{11}
+\contentsline {subsection}{\numberline {4.1}Frontend Design}{11}
+\contentsline {subsubsection}{\numberline {4.1.1}UI Standards}{11}
+\contentsline {paragraph}{\numberline {4.1.1.1}Fonts}{11}
+\contentsline {paragraph}{\numberline {4.1.1.2}Palette}{11}
+\contentsline {subsection}{\numberline {4.2}Backend Design}{11}
+\contentsline {subsubsection}{\numberline {4.2.1}API}{12}
+\contentsline {subsubsection}{\numberline {4.2.2}Common and Services}{12}
+\contentsline {subsubsection}{\numberline {4.2.3}Models}{12}
+\contentsline {subsubsection}{\numberline {4.2.4}Repositories}{12}
+\contentsline {subsection}{\numberline {4.3}Database Design}{13}

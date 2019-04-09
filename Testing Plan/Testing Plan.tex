@@ -217,6 +217,26 @@ When a current entry in the database needs to be altered or edited in any capaci
 
 \paragraph{DELETE request}
 To delete an entry from the database, a DELETE request is sent to the system specifically by the id of the object to be deleted. On a successful response, the database will respond with a 200 OK and the JSON object, signalling that the object was successfully deleted and removed from the database. 
+\newline
+{\setlength{\parindent}{0cm}
+
+
+The unit tests for this server will be responsible for testing the business logic and validation behind each endpoint. This business logic will be located in the services layer where each API controller action will have a service. Each of these services will have a number of unit tests that fall under two categories; Architectural tests and Functionality tests.
+\newline
+{\setlength{\parindent}{0cm}
+
+The architectural tests are primarily there to ensure each service has proper and valid dependencies being injected. For example, with the plans to use an inversion of control strategy for the validators for each service, the architectural tests would be needed to verify that the proper validators are being registered and called.
+\newline
+{\setlength{\parindent}{0cm}
+
+The functionality tests are the tests that verify that the services are behaving expectedly. These tests will verify that the object mapping from the incoming data transfer object (DTO) to the actual database model occurs without a change in data, that the validators perform correctly and ensure the correctness of the data, that any generated data is generated properly and assigned properly, and that the repository actions behave properly and return the expected object.
+\paragraph{FakeItEasy}
+The implementation plan for these unit tests is to utilize FakeItEasy with AutoFixture. FakeItEasy is a mocking or faking framework that is utilize to create fake instances of the objects and models that needs to be tested. AutoFixture is used to further simplify the arrange phase of a unit test by handling all of the dependencies of the SUT (system under test). It can also be used to generate fake data for models and objects. When used in conjunction with FakeItEasy, it creates an auto-mocking container that manages the entire arrange phase of the test more or less automatically.
+\newline
+{\setlength{\parindent}{0cm}
+
+When the unit test is written without the auto-mocking container, any object or dependency in the SUT needs to be set up manually, which also means the tests are liable to break every time anything in the system is changed. The auto-mocking container ensures the tests aren’t fragile by automatically mocking up all dependencies within the system. If any new dependencies are added to the system, the test will automatically create a mocked instance for it. For the arrange-act-assert model of unit testing, this is generally the entire arrange phase, leaving only the actual testing portion to be written.
+
 
 \subsubsection{Integration Testing}
 Once each separate endpoint is tested by sending CRUD requests, the next set of tests look to see if the JSON object that require the use other objects that are created on run time are integrated correctly. For example, a time entry has a field regarding workorders and whether or not any are associated with the particular entry. When there are associated workorders, a POST request should be able to include the workoder id and be able to reference said workorder by said id. When a GET request is sent to view the time entry, the workorder that is referenced should appear as well. Integrated object such as these are to be tested such that each table can properly store and showcase these integrations. 
