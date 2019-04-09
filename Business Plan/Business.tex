@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Title Page
+% LaTeX Template
+% Version 2.0 (17/7/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (LaTeX - Title Creation) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage}, rename
+% this file and move it to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./<new filename>.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{graphicx}
+\usepackage{mathpazo} % Palatino font
+\usepackage[legalpaper,margin=0.9in] {geometry}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{setspace}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\linespread{1.5}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textsc{University of Regina}}
+\rhead{\textsc{Software Systems Engineering}}
+\cfoot{\thepage}
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\Huge University of Regina}\\[1.5cm] % Main heading such as the name of your university/college
+
+	\textsc{\Large ENSE 477: Software Capstone Project}\\[0.5cm]
+	
+	\textsc{\Large Software Systems Engineering}\\[0.5cm] % Major heading such as course name
+	
+	
+	
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\Huge\bfseries Workshop Enterprise Resource Planning Business Plan Document}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textsc{Authors}\\
+			Jonathan Wells\\
+			\textsc{200328640}\\ % Your name
+			\large
+			Konstantin Kharitonov\\
+			\textsc{200354502} % Supervisor's name
+		\end{flushleft}
+		
+	\end{minipage}
+	~
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textsc{Supervisor}\\ % Supervisor's name
+			Karim Naqvi\\
+			M.A.Sc., P.Eng.\\
+		\end{flushright}
+	\end{minipage}
+	
+	% If you don't want a supervisor, uncomment the two lines below and comment the code above
+	%{\large\textit{Author}}\\
+	%John \textsc{Smith} % Your name
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	\vfill\vfill\vfill\vfill
+	\includegraphics[width=0.7\textwidth]{UR.png}\\[2cm] % Include a department/university logo - this will require the graphicx package
+	 
+
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large\today} % Date, change the \today to a set date if you want to be precise
+	
+	%----------------------------------------------------------------------------------------
+	
+	\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%Table of Contents %
+
+\newpage 
+\tableofcontents
+%-------------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------------
+
+\newpage
+\section{Introduction}
+The Workshop Enterprise Suite was designed as the go to management application for the University of Regina engineering workshop on campus. With the current method of tracking workorders for students and faculty being done completely with paper submissions and backlogging, this system will likely bring a significant increase to productivity of the workshop. As well, the shop is not currently able to track all non-billable time spent in the shop, and as such, are not able to be reported on. With the application, the workshop manager is able to log the hours spent in shop and differentiate between billable and non-billable time, with those logs able to be generated in reports that can be then sent out the faculty administration for evaluation. 
+
+\section{Problem}
+As it currently stands, the engineering workshop does not have the necessary tools to be run optimally. The current system is entirely done manually, which cause significant delays and time spent ineffectively. Students and/or faculty members under the current method must receive and fill out a workorder form by hand requesting the workshop services. As such, the workorder is only created and stored physically, without a proper digital backup.
+\newline
+{\setlength{\parindent}{0cm}
+
+All workorders are stored in binders which are categorized by their sequential id and year of creation. This means that if a past workorder ever has to be referenced, the manager has to physically search for the specific workorder and pull information for which materials are used or any other data. These workorder are likely to include how much material is used but does not specify that is how much of the material is left in the shop. As well, there is likely no mention of vendor information or pricing information in the order. 
+By having to manually search for specific workorders and materials, the shop loses valuable time trying to recover previous information that might not be overly useful in the long run. This can deter the manager from doing so and then purchasing more of a material that the workshop is already well stocked in. 
+\newline
+{\setlength{\parindent}{0cm}
+
+Another major issue with the current system is that there is no true method for storing and visualizing time tracking data. The workshop manager has to log their own time for how long they work on a project for the purposes of billing the requester for the project. However, since not all time in the shop is devoted to working on workorders, all time spent elsewhere while the manager is at work is not tracked and therefore lost. Non-billable time does not get reported to management, which then affects their decisions regarding the funding for the shop.
+\newline
+{\setlength{\parindent}{0cm}
+
+Since they are stored in phyisical copies which are then inserted into binders, workorders may easily be lost or damaged while work is being done inside the workshop. It is also highly possible that in the case of an emergency, such as a fire inside the shop, all workorders can be lost, resulting the shop loosing all records of the orders. Any workorders that are non-recoverable are then lost forever without any formal back up and cannot ever be referenced again.  
+
+\section{Viability}
+
+The engineering workshop currently offers \$50 per hour for all work related to the workorder. This does not include time spent in meetings with a client or other such events. Since it can take upwards of 2 to 3 hours to find, research, contact and purchase from a vendor for a particular material, which would bring the cost of researching materials to be \$100 - \$150 for a single workorder. On average, the shop recieves upwards of 30 workorders in a given fiscal year, meaning that the shop would spend between \$3000 and \$4500 purely on researching products. By using the ERP Suite, which would contain every single workorder in the shop, the time it takes to reasearch a particular workorder and the materials would dramatically decrease. The manager would just have to retrieve the workorder and find all of the relevant data to the material and its vendor's contact information and pricing in the click of two buttons. This means that a process that was originally using around 2- 1/2 hours to complete now can be done within 5-10 minutes. Instead of the research time costing thousands a year, that time now only costs around \$100 to \$250 instead. 
+\newline
+{\setlength{\parindent}{0cm}
+ 
+By using the application
+s time tracking feature, the workshop manager is able to now log every single time entry into a system regardless of whether it is billable or non-billable time. Each entry is tracked and recorded, which allows for a visual representation of how shop time is spent during working hours. Now, the faculty gets a much clearer representation on what exactly the manager is able to accomplish within a period of time by getting the full picture, making calculated decisions much easier. As well, the time tracking features also allows the workshop manager to more accurately visualize the work schedule and plan project work and meetings more effectively, thus maximizing what kind of work they are able to accomplish within a period of time.  
+
+\section{Cost of Software}
+The ERP Suite in total has taken roughly around 350-400 hours to develop to its current state by two developers, which include the time for research, designing and development. Going by what a standard rate would be for an entry level software engineer of \$20 per hour, this software would have taken roughly \$14000 to \$16000 in labour costs if the university had hired us to complete this project. A steep price initially for any potential client that is willing to hire us for a potential client, the ERP Suite would be well on its way to break even by the amount of time being saved during operation. Drastically reduced material lookup and increased productivity throughout the workorder process would result in more money saved annually in comparison to the previous manual system. 
+
+\section{Future Clients}
+The ERP Suite in its current state is designed specifically for the university workshop, with planned integrations with the University of Regina's SAML servers and Financial Services to the specific format of workorder that the shop uses. As such, for the application to be sold elsewhere for other shops or mechanical services would require for a major system re-design. For every client, their form of an order would have to follow the business rules of that shop, meaning that the data structure of the workorder section would have to be reformatted to accommodate. Due to this very nature, the ERP Suite would not be able for a general public release, but rather by contract with an associated party. 
+
+
+\end{document}
+
+
